@@ -4,16 +4,47 @@
     <meta charset="UTF-8">
     <title>Document</title>
 </head>
+
 <body>
     <section>
-       <p>Informacje o kliencie</p>
-       <br>
-       <label for="name">Imię</label><br>
+        <p>Informacje o kliencie</p>
+        <br>
+        <label for="name">Imię</label><br>
         <input type="text" name="name" id="name" placeholder="Twoje imię" autofocus required>
         <br>
-        
+        <label for="tel">Numer telefonu</label><br>
+        <input type="tel" name="tel" id="tel" placeholder="Telefon 1-234-567-8910" required pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}-[0-9]{4}">
+        <br>
+        <label for="mail">Email</label><br>
+        <input type="text" name="_replyto" id="mail" placeholder="Email" required multiple>
+
     </section>
-    
-   
+    <br>
+    <section>
+        <p>Książki</p>
+        <br>
+        <form>
+            <p>
+                <label>
+      <input type="text" name="tytul" list="tytul">
+    </label>
+
+                <datalist id="tytul">
+                <option>Ania z Zielonego Wzgórza</option>
+                <option>Gwiazd Naszych Wina</option>
+                <option>Opowiadania bizarne</option>
+                <option>Outsider</option>
+                <option>O czym myślą koty</option>
+        </datalist>
+            </p>
+
+            <p>
+                <button type="submit">zatwierdź</button>
+            </p>
+        </form>
+
+
+    </section>
+
 </body>
 </html>
