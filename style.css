@@ -5,7 +5,7 @@ body {
 fieldset {
         display: block;
     -webkit-margin-start: 2px;
-    -webkit-margin-end: 2px;
+    -webkit-margin-end: 1500px;
     -webkit-padding-before: 0.35em;
     -webkit-padding-start: 0.75em;
     -webkit-padding-end: 0.75em;
