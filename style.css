@@ -1,0 +1,29 @@
+/* SELEKTORY: */
+body {
+	background-color: #72A7A3;
+    }
+fieldset {
+        display: block;
+    -webkit-margin-start: 2px;
+    -webkit-margin-end: 2px;
+    -webkit-padding-before: 0.35em;
+    -webkit-padding-start: 0.75em;
+    -webkit-padding-end: 0.75em;
+    -webkit-padding-after: 0.625em;
+    min-width: -webkit-min-content;
+    border-width: 5px;
+    border-style: dotted;
+    border-color:#EBE253;  
+}
+
+h1{
+    font-family:Courier New;
+    
+}
+
+h2{
+   font-family:Courier New;
+     
+}
+
+    
