@@ -6,42 +6,49 @@
 </head>
 
 <body>
+   <form action="https://formspree.io/emiliaguzik@interia.pl" method="POST"></form>
     <section>
-        <p>Informacje o kliencie</p>
-        <br>
+        <fieldset>
+<legend>Informacje o kliencie</legend>
+<div align="center">
         <label for="name">Imię</label><br>
-        <input type="text" name="name" id="name" placeholder="Twoje imię" autofocus required>
+        <input type="text" name="name" id="name" placeholder="Twoje imię" autofocus required autocomplete="on">
         <br>
         <label for="tel">Numer telefonu</label><br>
-        <input type="tel" name="tel" id="tel" placeholder="Telefon 1-234-567-8910" required pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}-[0-9]{4}">
+        <input type="tel" name="tel" id="tel" placeholder="Telefon 1-234-567-8910" required autocomplete="on" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}-[0-9]{4}">
         <br>
-        <label for="mail">Email</label><br>
-        <input type="text" name="_replyto" id="mail" placeholder="Email" required multiple>
-
+        <label for="email">Email</label><br>
+        <input type="email" name="_replyto" id="email" placeholder="Email" required multiple autocomplete="on">
+        </div>
+</fieldset>
     </section>
+    
     <br>
     <section>
-        <p>Książki</p>
+        
         <br>
         <form>
-            <p>
-                <label>
+        <fieldset>
+<legend>Książki</legend>
+<div align="center">
+ <label>
       <input type="text" name="tytul" list="tytul">
     </label>
-
-                <datalist id="tytul">
+        <datalist id="tytul">
                 <option>Ania z Zielonego Wzgórza</option>
                 <option>Gwiazd Naszych Wina</option>
                 <option>Opowiadania bizarne</option>
                 <option>Outsider</option>
                 <option>O czym myślą koty</option>
         </datalist>
-            </p>
-
-            <p>
+            <label for="number">Ilość(maks.5)</label>
+            <input type="number" id="number" min="1" max="5">
+            </div>
+            </fieldset>
+               <div align="right">
                 <button type="submit">zatwierdź</button>
-            </p>
-        </form>
+            </div>
+            </form>
 
 
     </section>
